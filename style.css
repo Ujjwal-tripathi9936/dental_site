@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background: linear-gradient(to left, rgb(5, 15, 123), rgb(1, 1, 1));
+
+}
+
+.iconbar a {
+    color: #d3d4d4;
+}
+
+.iconbar a:hover {
+    color: #0093ff;
+}
+
+.banner {
+    height: 500px;
+    background: linear-gradient(to left, rgba(5, 15, 123, 0), rgba(22, 24, 26, 0.957)), url("/images/dental\ carousel\ img2.jpg") fixed;
+    background-size: cover;
+}
+
+.banner-box {
+    width: 100%;
+    color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to left, rgba(5, 15, 123, 0.59), rgba(16, 16, 18, 0.777));
+    margin-top: -300px;
+    justify-items: center;
+    border: 3px solid transparent;
+    text-align: center;
+    border-image: linear-gradient(270deg, #00d1b0, #00e94f, #0093ff, #e08af4) 1;
+    box-shadow: 0px 0px 12px #9d7a7a;
+    height: 260px;
+    right: 0%;
+    padding: 0%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 853px) {
+    .banner-box {
+        width: 300px;
+        height: 310px;
+        margin-top: -350px;
+        margin-left: 55px;
+    }
+}
+
+@media only screen and (max-width: 406px) {
+    .banner-box {
+        width: 300px;
+        justify-content: center;
+        height: 310px;
+        margin-top: -350px;
+        display: flex;
+        margin-left: 35px;
+
+
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner-box {
+        width: 200px;
+        justify-content: center;
+        height: 280px;
+        margin-top: -350px;
+        display: flex;
+        margin-left: 15px;
+        align-items: center;
+
+    }
+}
+
+@media only screen and (max-width: 371px) {
+    .banner-box {
+        width: 200px;
+        justify-content: center;
+        height: 280px;
+        margin-top: -340px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.btn {
+    display: flex;
+    width: auto;
+    justify-content: center;
+
+}
+
+.btn button {
+    width: auto;
+    padding: 5px;
+    height: 45px;
+    border: 2px solid transparent;
+    font-size: 10px;
+    font-weight: bolder;
+    background-color: rgb(126, 143, 165);
+    color: rgb(2, 2, 2);
+    overflow: hidden;
+    transition: .9s ease;
+}
+
+.btn button:hover {
+    background: rgba(0, 0, 0, 0.562);
+    color: beige;
+    border-image: linear-gradient(270deg, #00d1b0, #00e94f, #0093ff, #e08af4) 2;
+    box-shadow: 0px 0px 12px #9d7a7a;
+
+}
+
+.card a {
+
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid grey;
+    height: 200px;
+    transition: .9s ease;
+
+}
+
+.card a:hover {
+    color: rgb(173, 169, 169);
+    background: linear-gradient(to left, rgba(5, 15, 123, 0.838), rgb(16, 16, 18));
+    box-shadow: 0 0 10px green;
+    height: 300px;
+    padding-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.card {
+
+
+    text-align: center;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 5px;
+    border: none;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100px;
+}
+
+.icondata {
+
+    text-align: center;
+    margin-top: 100px;
+}
