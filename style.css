@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
     font-family: 'Trebuchet MS', sans-serif;
+    background-color: rgb(202, 201, 201);
 }
 
 .navbar {
@@ -12,7 +14,6 @@ body {
     z-index: 10000;
     width: 100%;
     background: linear-gradient(to left, rgb(5, 15, 123), rgb(1, 1, 1));
-
 }
 
 .iconbar a {
@@ -30,12 +31,12 @@ body {
 }
 
 .banner-box {
-    width: 100%;
     color: rgb(242, 242, 242);
-    display: flex;
-    justify-content: center;
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
     background: linear-gradient(to left, rgba(5, 15, 123, 0.59), rgba(16, 16, 18, 0.777));
-    margin-top: -300px;
+    margin-top: -350px;
     justify-items: center;
     border: 3px solid transparent;
     text-align: center;
@@ -64,8 +65,6 @@ body {
         margin-top: -350px;
         display: flex;
         margin-left: 35px;
-
-
     }
 }
 
@@ -78,27 +77,31 @@ body {
         display: flex;
         margin-left: 15px;
         align-items: center;
-
     }
 }
 
 @media only screen and (max-width: 371px) {
     .banner-box {
-        width: 200px;
+        width: 250px;
         justify-content: center;
         height: 280px;
         margin-top: -340px;
         display: flex;
         align-items: center;
-
     }
+}
+
+
+.banner2 {
+    height: 500px;
+    background: linear-gradient(to left, rgba(5, 15, 123, 0), rgba(22, 24, 26, 0.957)), url("/images/bg2.jpg") fixed;
+    background-size: cover;
 }
 
 .btn {
     display: flex;
     width: auto;
     justify-content: center;
-
 }
 
 .btn button {
@@ -119,36 +122,61 @@ body {
     color: beige;
     border-image: linear-gradient(270deg, #00d1b0, #00e94f, #0093ff, #e08af4) 2;
     box-shadow: 0px 0px 12px #9d7a7a;
-
 }
 
-.card a {
 
+
+
+
+.banner69 {
+    width: auto;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.iconabout {
+    padding-top: 50px;
+}
+
+.iconabout h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 18px;
+    color: rgba(1, 8, 86, 0.83);
+}
+
+.icon1 {
+    color: #0f075b;
+}
+
+
+
+
+.card a {
     text-decoration: none;
     color: rgb(16, 16, 16);
     width: auto;
     border-radius: 10px;
     border: 2px solid grey;
     height: 200px;
-    transition: .9s ease;
-
+    transition: .9s ease; 
+   
 }
 
 .card a:hover {
     color: rgb(173, 169, 169);
     background: linear-gradient(to left, rgba(5, 15, 123, 0.838), rgb(16, 16, 18));
-    box-shadow: 0 0 10px green;
+    box-shadow: 0 0 10px rgb(0, 18, 66);
     height: 300px;
     padding-top: 30px;
     border-radius: 10px;
     text-align: center;
-
 }
 
 .card {
-
-
     text-align: center;
+ 
     height: 250px;
     background-color: transparent;
     border-radius: 20px;
@@ -158,11 +186,77 @@ body {
 }
 
 .card img {
-    width: 100px;
+    width: 70px;
 }
 
 .icondata {
 
     text-align: center;
     margin-top: 100px;
+}
+
+
+/* owel carousel css */
+
+.home-demo {
+    position: relative;
+    margin-top: -450px;
+    width: 100%;
+}
+
+.carousel {
+    width: 500px;
+    margin-top: -400px;
+    margin-left: 20px;
+}
+
+
+@media only screen and (max-width:650px) {
+    .carousel {
+        width: 100%;
+    }
+}
+
+
+.cbox1 {
+    background: linear-gradient(to left, rgba(5, 15, 123, 0.838), rgb(16, 16, 18));
+    float: right;
+    border: 3px solid transparent;
+    text-align: center;
+    border-image: linear-gradient(270deg, #00d1b0, #00e94f, #0093ff, #e08af4) 1;
+    box-shadow: 0px 0px 12px #9d7a7a;
+    margin-top: -270px;
+    overflow: hidden;
+    width: 50%;
+    height: 250px;
+    color: wheat;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .carousel {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .cbox1 {
+        width: 90%;
+        float: none;
+        margin-top: -380px;
+        height: auto;
+    }
+}
+
+
+
+
+.footerbox {
+    width: 100%;
+
+    margin-top: 300px;
+
 }
